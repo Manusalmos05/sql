@@ -36,11 +36,12 @@ INSERT INTO Productos(Nombre,ID_Categoria,CantidadPorUnidad,PrecioCoste, PrecioV
 
 /*pedidos*/
 
-INSERT INTO Pedidos
-(ID_Pedido,ID_Cliente,ID_Empleado,FechaPedido,FechaEnvio, DireccionExpedicion, CiudadExpedicion,RegionExpedicion,CodPostalExpedicion,PaisExpedicion)
-VALUES (10248,1,2,'1996-4-7','1996-4-12','59 rue de l''Abbaye','Reims',NULL,'51100','France');
+INSERT INTO Pedidos VALUES (10248,1,2,'1996-4-7','1996-4-12','59 rue de l''Abbaye','Reims',NULL,'51100','France');
 
 
-INSERT INTO Pedidos
-(ID_Pedido,ID_Cliente,ID_Empleado,FechaPedido,FechaEnvio, DireccionExpedicion, CiudadExpedicion,RegionExpedicion,CodPostalExpedicion,PaisExpedicion)
-VALUES (10,2,0,'2001-5-7','2001-5-8','59 calle la milagrosa','Valencia','Valencia','03350','Spain');
+INSERT INTO Pedidos VALUES (10,2,0,'2001-5-7','2001-5-8','59 calle la milagrosa','Valencia','Valencia','03350','Spain');
+
+/*detallesPedido*/
+
+INSERT INTO DetallePedido VALUES(10248,4,10);
+INSERT INTO DetallePedido VALUES(10,2,14);
