@@ -1,0 +1,1 @@
+SELECT cliente_id, cliente_nombre from clientes WHERE cliente_nombre like "david";
