@@ -24,3 +24,23 @@ INSERT INTO Clientes VALUES(NULL, 'Manuela','St. Aureliano','bigastro',NULL,'033
 INSERT INTO Empleados VALUES(0,'Daza','Maria',30,'2026-03-11 00:00:00', 1235.75);
 INSERT INTO Empleados VALUES(1, 'Davolio','Nancy',56,'1992-05-01 00:00:00', 3000.75);
 INSERT INTO Empleados VALUES(2, 'Salas','Ruben',24,'2015-06-01 00:00:00', 2000.00);
+
+
+/*productos*/
+
+INSERT INTO Productos(Nombre,ID_Categoria,CantidadPorUnidad,PrecioCoste, PrecioVenta) VALUES('Aniseed Syrup',2,'12 - 550 ml bottles',10,23);
+INSERT INTO Productos(Nombre,ID_Categoria,CantidadPorUnidad,PrecioCoste, PrecioVenta) VALUES('Chef Anton''s Cajun Seasoning',2,'48 - 6 oz jars',22,31.5);
+INSERT INTO Productos(Nombre,ID_Categoria,CantidadPorUnidad,PrecioCoste, PrecioVenta) VALUES('Chef Anton''s Gumbo Mix',2,'36 boxes',21.35,34.75);
+INSERT INTO Productos(Nombre,ID_Categoria,CantidadPorUnidad,PrecioCoste, PrecioVenta) VALUES('Pelotas tenis',1,'10 boxes x 20 balls',1.8,2.50);
+
+
+/*pedidos*/
+
+INSERT INTO Pedidos
+(ID_Pedido,ID_Cliente,ID_Empleado,FechaPedido,FechaEnvio, DireccionExpedicion, CiudadExpedicion,RegionExpedicion,CodPostalExpedicion,PaisExpedicion)
+VALUES (10248,1,2,'1996-4-7','1996-4-12','59 rue de l''Abbaye','Reims',NULL,'51100','France');
+
+
+INSERT INTO Pedidos
+(ID_Pedido,ID_Cliente,ID_Empleado,FechaPedido,FechaEnvio, DireccionExpedicion, CiudadExpedicion,RegionExpedicion,CodPostalExpedicion,PaisExpedicion)
+VALUES (10,2,0,'2001-5-7','2001-5-8','59 calle la milagrosa','Valencia','Valencia','03350','Spain');

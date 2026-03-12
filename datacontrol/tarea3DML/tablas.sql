@@ -70,8 +70,6 @@ CREATE TABLE Pedidos (
 CREATE TABLE DetallePedido (
 	ID_Pedido int NOT NULL ,
 	ID_Producto int NOT NULL ,
-	Nombre_producto varchar(60),
-    Precio_producto float(6,2),
 	PrecioTotal decimal(6,2) NOT NULL ,
 	Cantidad int NOT NULL ,
 	
