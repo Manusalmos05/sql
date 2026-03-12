@@ -1,0 +1,1 @@
+SELECT CONCAT(cliente_nombre, ' ',cliente_apellido) AS 'Nombre completo' FROM clientes;

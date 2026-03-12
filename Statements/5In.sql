@@ -1,0 +1,1 @@
+SELECT * FROM clientes WHERE cliente_nombre IN ('david', 'conchi');

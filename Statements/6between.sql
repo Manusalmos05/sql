@@ -1,0 +1,1 @@
+SELECT * FROM clientes WHERE cliente_edad BETWEEN 0 AND 29;
