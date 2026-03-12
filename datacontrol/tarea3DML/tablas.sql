@@ -52,7 +52,7 @@ CREATE TABLE Categorias (
 
 CREATE TABLE Pedidos (
 	ID_Pedido int  NOT NULL,
-	ID_Cliente varchar(5) NULL ,
+	ID_Cliente int NOT NULL ,
 	ID_Empleado int NULL ,
 	FechaPedido date NULL ,
 	FechaEnvio date NULL ,
