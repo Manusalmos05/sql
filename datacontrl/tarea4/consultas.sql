@@ -105,3 +105,23 @@ ORDER BY NumeroVentas DESC;
 
 
 /*departamento con menos empleados*/
+
+SELECT d.nombre as Departamento, COUNT(DISTINCT e.id_empleado) as NumeroEmpleados
+FROM departamento as d
+LEFT JOIN empleado e ON d.id_departamento=e.id_departamento
+GROUP BY d.id_departamento, d.nombre
+ORDER BY NumeroEmpleados ASC
+LIMIT 1;
+
+/*tienda con mas proveedores*/
+
+SELECT t.id_tienda, t.nombre as NombreTienda, COUNT(DISTINCT p.id_proveedor) as NumeroProveedor
+FROM proveedor as p
+JOIN  tienda as t ON p.id_tienda=t.id_tienda
+GROUP BY t.id_tienda, t.nombre
+ORDER BY NumeroProveedor DESC
+LIMIT 1
+;
+
+/*proveedor con el mayor coste*/
+
