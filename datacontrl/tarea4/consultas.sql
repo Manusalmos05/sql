@@ -123,5 +123,12 @@ ORDER BY NumeroProveedor DESC
 LIMIT 1
 ;
 
-/*proveedor con el mayor coste*/
+/*top 3 de proveedores con el mayor coste*/
+SELECT p.id_proveedor, p.nombre as NombreProveedor, SUM(pd.coste) as CosteTotal
+FROM pedido as pd 
+JOIN tienda as t ON pd.id_tienda=t.id_tienda
+JOIN proveedor as p ON t.id_tienda=p.id_tienda
+GROUP BY p.id_proveedor, p.nombre
+ORDER BY CosteTotal DESC
+LIMIT 3;
 
